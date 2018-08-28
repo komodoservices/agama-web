@@ -9,22 +9,22 @@ let Config = {
   whitelabel: true,
   wlConfig: {
     enableAllCoins: false,
-    title: 'Komodo web wallet', // app title
+    title: 'Wallet | Komodo Services', // app title
     mainLogo: 'native/kmd_header_title_logo.png', // login logo
     coin: {
       ticker: 'KMD',
       name: 'Komodo',
-      logo: 'cryptologo/kmd.png', // dashboard coin logo
+      logo: 'cryptologos/kmd.png', // dashboard coin logo
     },
-    explorer: 'https://kmdexplorer.ru', // insight or iquidus
+    explorer: 'https://explorer.komodo.services', // insight or iquidus
     serverList: [ // electrum servers list
       'electrum1.cipig.net:10001:tcp',
       'electrum2.cipig.net:10001:tcp',
     ],
     support: {
       onlineLink: {
-        url: 'https://www.atomicexplorer.com/wallet',
-        title: 'https://www.atomicexplorer.com/wallet',
+        url: 'http://wallet.komodo.services',
+        title: 'http://wallet.komodo.services',
       },
       standaloneLink: 'https://www.atomicexplorer.com/wallet.zip',
       chatApp: {
@@ -39,15 +39,15 @@ let Config = {
         urlNewTicket: 'https://support.komodoplatform.com/support/tickets/new',
       },
       gitLink: {
-        title: 'github.com/pbca26/agama-web',
-        url: 'https://github.com/pbca26/agama-web',
+        title: 'github.com/komodoservices/agama-web',
+        url: 'https://github.com/komodoservices/agama-web',
       },
     },
   },
-  /*preload: {
+  preload: {
     seed: '',
-    coins: ['kmd', 'chips'],
-  },*/
+    coins: ['kmd'],
+  },
 };
 
 export const devlog = (msg, data) => {
